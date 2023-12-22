@@ -26,7 +26,6 @@ public class Item {
     }
 
     public Long getId() {
-
         return idNumber;
     }
 
@@ -35,7 +34,6 @@ public class Item {
     }
 
     public Double getPrice() {
-
         return price;
     }
 

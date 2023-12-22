@@ -8,9 +8,19 @@ import java.util.Comparator;
  * @author leon on 30/01/2019.
  */
 public class IdComparator implements Comparator<Item> {
+
+    public IdComparator(){
+        super();
+    }
     @Override
     public int compare(Item o1, Item o2) {
-
+        if (o1.getId()-o2.getId() >0){
+            return 1;
+        } else if (o1.getId().equals(o2.getId())){
+            return 0;
+        }else {
+            return -1;
+        }
         return Long.compare(o1.getId(),o2.getId());
     }
 }
