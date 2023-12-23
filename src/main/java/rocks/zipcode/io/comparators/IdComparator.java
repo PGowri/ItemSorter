@@ -21,6 +21,5 @@ public class IdComparator implements Comparator<Item> {
         }else {
             return -1;
         }
-        return Long.compare(o1.getId(),o2.getId());
     }
 }
